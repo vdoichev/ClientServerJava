@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ClientServerJava.iml" filepath="$PROJECT_DIR$/ClientServerJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Socketor/Socketor.iml" filepath="$PROJECT_DIR$/Socketor/Socketor.iml" />
     </modules>
   </component>
 </project>

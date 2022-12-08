@@ -6,7 +6,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class Server {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
         ServerSocket serverSocket = new ServerSocket(8000);
         int count = 0;
         while (true) {
@@ -17,12 +17,10 @@ public class Server {
             OutputStreamWriter writer = new OutputStreamWriter(clientSocket.getOutputStream());
 
             String request = reader.readLine();
+            Thread.sleep(3000);
             System.out.println(request);
             String response = "#" + count + ", your message length is " + request.length() + "\n";
             writer.write(response);
-//            writer.write("HTTP/1.0 200 ok\n" +
-//                    "Content-type: text/html\n" +"\n" +
-//                    "<h1>JAVA<h1>\n");
             writer.flush();
             writer.close();
             reader.close();
