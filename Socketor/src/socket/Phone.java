@@ -1,17 +1,25 @@
+package socket;
+
 import java.net.*;
 import java.io.*;
 
 public class Phone {
-    ServerSocket server;
-    Socket client;
-    BufferedReader reader;
-    BufferedWriter writer;
+    private ServerSocket server;
+    private Socket client;
+    private BufferedReader reader;
+    private BufferedWriter writer;
+
+    public Phone(Phone phoneServer) {
+        server = null;
+        client = phoneServer.accept();
+        createStreams();
+    }
 
     public Phone(String port) {
         try {
             server = new ServerSocket(Integer.parseInt(port));
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
     }
 
@@ -20,7 +28,7 @@ public class Phone {
             client = new Socket(ip, Integer.parseInt(port));
             createStreams();
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
     }
 
@@ -33,7 +41,7 @@ public class Phone {
                     new OutputStreamWriter(
                             client.getOutputStream()));
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
     }
 
@@ -41,15 +49,13 @@ public class Phone {
         try {
             return reader.readLine();
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
-        return "";
     }
 
-    public void accept() {
+    private Socket accept() {
         try {
-            client = server.accept();
-            createStreams();
+            return server.accept();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -61,7 +67,7 @@ public class Phone {
             writer.newLine();
             writer.flush();
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
     }
 
@@ -71,7 +77,15 @@ public class Phone {
             writer.close();
             client.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void closeServer() {
+        try {
+            server.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 }
