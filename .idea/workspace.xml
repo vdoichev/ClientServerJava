@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="944dc12c-5aa6-41e2-941d-8317956db81c" name="Changes" comment="Add dialog between client and server">
-      <change afterPath="$PROJECT_DIR$/Socketor/Socketor.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Socketor/src/Phone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Socketor/src/Socketor.java" afterDir="false" />
+    <list default="true" id="944dc12c-5aa6-41e2-941d-8317956db81c" name="Changes" comment="Add module Socketor">
+      <change afterPath="$PROJECT_DIR$/ThreadExample/ThreadExample.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThreadExample/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThreadExample/src/Worker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,24 +36,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "11"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Socketor Server">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Client" />
       <module name="ClientServerJava" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ThreadExample" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -76,6 +82,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Socketor Server" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Server" />
@@ -105,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670443637178</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add module Socketor">
+      <created>1670514634322</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670514634322</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +137,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Create repository" />
     <MESSAGE value="Add dialog between client and server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add dialog between client and server" />
+    <MESSAGE value="Add module Socketor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add module Socketor" />
   </component>
 </project>

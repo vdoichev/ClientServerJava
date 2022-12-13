@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ClientServerJava.iml" filepath="$PROJECT_DIR$/ClientServerJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/Socketor/Socketor.iml" filepath="$PROJECT_DIR$/Socketor/Socketor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThreadExample/ThreadExample.iml" filepath="$PROJECT_DIR$/ThreadExample/ThreadExample.iml" />
     </modules>
   </component>
 </project>
